@@ -1,0 +1,31 @@
+---
+
+---
+
+<a 
+    class="btn"
+    rel="noreferer"
+    role="button"
+>
+    <slot />
+    <slot name="after" />
+</a>
+
+<style>
+    a {
+        padding: 8px 25px;
+        background: #049edb;
+        color: #fff;
+        border-radius: .2em;
+        text-decoration: none;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        gap: .5rem;
+        justify-content: center;
+    }
+
+    a:hover {
+        background: #028dc5;
+    }
+</style>
