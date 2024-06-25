@@ -15,12 +15,12 @@ import HeaderButton from "@/components/HeaderButton.astro"
             </span>
         </article>
 
-        <span>
+        <div class="btn-container">
             <HeaderButton
             slot="after"
             href="https://api.whatsapp.com/send?phone=34600284568"
             >
-                INTERESADO <span class="material-symbols-outlined airplane-ticket">airplane_ticket</span>
+                INTERESADO <span class="material-symbols-outlined airplane-ticket" style="font-size: 20px !important;">airplane_ticket</span>
             </HeaderButton>
         </div>
 
@@ -35,11 +35,11 @@ import HeaderButton from "@/components/HeaderButton.astro"
 <style>
     section {
         width: 85%;
+        margin: auto;
         display: flex;
         flex-direction: row;
         align-items: center;
         padding-top: 50px;
-        margin: auto;
         margin-top: 0;
         gap: 3rem;
         transition: all 0.3s ease;
@@ -57,25 +57,22 @@ import HeaderButton from "@/components/HeaderButton.astro"
         box-sizing: border-box;
     }
 
-    section div {
-        margin: auto;
-    }
-
     section > div article {
         padding-bottom: 30px;
         box-sizing: border-box;
     }
 
     section > div span {
-        /* text-wrap: pretty; */
         display: flex;
         flex-direction: column;
-        /* align-items: center; */
         justify-content: start;
-        /* box-sizing: border-box; */
-        font-size: 1.1em;
+       font-size: 1.1em;
         font-weight: 300;
         line-height: 1.5em;
+    }
+
+    .btn-container {
+        width: 35%;
     }
 
     a {
