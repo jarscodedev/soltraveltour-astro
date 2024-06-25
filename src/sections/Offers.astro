@@ -1,5 +1,5 @@
 ---
-
+import HeaderButton from "@/components/HeaderButton.astro"
 ---
 
 <section>
@@ -17,11 +17,11 @@
                 <span>Desde 890€ 7 noches</span>
             </div>
             <div>
-                <a 
-                    class="btn" 
+                <HeaderButton 
                     href="https://api.whatsapp.com/send?phone=34600284568" 
-                    target="_blank">RESERVAR <span class="material-symbols-outlined">forward</span>
-                </a>
+                >
+                    RESERVAR <span class="material-symbols-outlined">forward</span>
+                </HeaderButton>
             </div>
         </div>
         <div class="cont-card">
@@ -31,11 +31,11 @@
                 <span>Desde 259€ solo ida | 480€ Ida y vuelta</span>
             </div>
             <div>
-                <a 
-                    class="btn" 
+                <HeaderButton 
                     href="https://api.whatsapp.com/send?phone=34600284568" 
-                    target="_blank">RESERVAR <span class="material-symbols-outlined">forward</span>
-                </a>
+                >
+                    RESERVAR <span class="material-symbols-outlined">forward</span>
+                </HeaderButton>
             </div>
         </div>
         <div class="cont-card">
@@ -45,11 +45,11 @@
                 <span>Ida y vuelta desde 1250€</span>
             </div>
             <div>
-                <a 
-                    class="btn" 
+                <HeaderButton 
                     href="https://api.whatsapp.com/send?phone=34600284568" 
-                    target="_blank">RESERVAR <span class="material-symbols-outlined">forward</span>
-                </a>
+                >
+                    RESERVAR <span class="material-symbols-outlined">forward</span>
+                </HeaderButton>
             </div>
         </div>
         <div class="cont-card">
@@ -59,11 +59,11 @@
                 <span>Desde 1234€</span>
             </div>
             <div>
-                <a 
-                    class="btn" 
+                <HeaderButton 
                     href="https://api.whatsapp.com/send?phone=34600284568" 
-                    target="_blank">RESERVAR <span class="material-symbols-outlined">forward</span>
-                </a>
+                >
+                    RESERVAR <span class="material-symbols-outlined">forward</span>
+                </HeaderButton>
             </div>
         </div>
     </div>
@@ -95,7 +95,7 @@
         font-weight: 300;
         width: 55%;
         text-align: center;
-        padding-bottom: 2rem;
+        padding-bottom: 3rem;
         display: flex;
         margin: auto;
     }
@@ -144,16 +144,4 @@
         text-align: center;
     }
 
-    .btn {
-        padding: 10px 25px;
-        background: #049edb;
-        color: #fff;
-        border-radius: .2em;
-        text-decoration: none;
-        cursor: pointer;
-    }
-
-    .btn:hover {
-        background: #028dc5;
-    }
 </style>

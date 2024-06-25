@@ -1,5 +1,5 @@
 ---
-
+import HeaderButton from "@/components/HeaderButton.astro"
 ---
 
 <section>
@@ -9,15 +9,20 @@
         <p>
             <span>
                 Sumérgete en destinos exóticos, saborea culturas fascinantes, 
-                y crea recuerdos inolvidables sin paquetes de viaje personalizados</span>.
-            <span class="span">¡Que la aventura comience hoy mismo!</span>
+                y crea recuerdos inolvidables sin paquetes de viaje personalizados.
+                <strong >¡Que la aventura comience hoy mismo!</strong>
+            </span>
         </p>
-        <a
-            href="https://api.whatsapp.com/send?phone=34600284568" 
-            rel="noreferer noopener"  
-            role="button"
-            target="_blank">INTERESADO <span class="material-symbols-outlined airplane-ticket">airplane_ticket</span>
-        </a>
+
+        <span>
+            <HeaderButton
+            slot="after"
+            href="https://api.whatsapp.com/send?phone=34600284568"
+            >
+                INTERESADO <span class="material-symbols-outlined airplane-ticket">airplane_ticket</span>
+            </HeaderButton>
+        </div>
+
     </div>
 
     <figure>
@@ -47,10 +52,20 @@
 
     section > div {
         width: 45%;
+        box-sizing: border-box;
     }
 
     section div {
         margin: auto;
+    }
+
+    section > div > span {
+        display: flex;
+        align-items: start;
+        justify-content: start;
+        box-sizing: border-box;
+        font-size: 1.2em;
+        text-wrap: pretty;
     }
 
     a {
@@ -73,14 +88,9 @@
         font-weight: 300;
     }
 
-    section > p {
-        text-wrap: pretty;
-        padding-bottom: 30px;
-    }
-
-    .span {
+    strong {
         color: #fe7913;
-        font-weight: 600;
         font-size: 1.20em;
     }
+
 </style>
