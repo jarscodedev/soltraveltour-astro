@@ -1,0 +1,77 @@
+---
+
+---
+
+<header>
+    <nav>
+        <a href="/">
+            <img src="public/images/logo-suntraveltour.png" alt="not-logo" >
+        </a>
+        <ul>
+            <li><a href="/">Inicio</a></li>
+            <li><a href="/#ofertas">Ofertas</a></li>
+            <li><a href="/#servicios">Servicios</a></li>
+            <li><a href="/#equipo">Equipo</a></li>
+            <li><a href="/#sobremi">Sobre mí</a></li>
+            <li><a href="/#aerolineas">Aerolíneas</a></li>
+            <a class="btn" href="/contact" rel="noreferer">Contactar</a>
+        </ul>
+    </nav>
+</header>
+
+<style>
+    nav {
+        display: flex;
+        flex-direction: row;
+        padding: 15px 70px 50px 70px;
+        justify-content: space-between;
+        box-sizing: border-box;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        gap: 2.3em;
+        align-items: center;
+    }
+
+    nav > a {
+        text-decoration: none;
+        color: #fff;
+    }
+
+    nav > a, nav > a > img {
+        width: 70px;
+        height: 70px;
+        transition: all 0.3s ease;
+    }
+
+    li {
+        list-style: none;
+    }
+
+    li a {
+        text-decoration: none;
+        color: #055cb4;
+        font-weight: 300;
+        font-size: 1.1em;
+    }
+
+    li a:hover {
+        text-decoration: underline;
+    }
+
+    .btn {
+        padding: 10px 25px;
+        background: #049edb;
+        color: #fff;
+        border-radius: .2em;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    .btn:hover {
+        background: #028dc5;
+    }
+
+</style>
