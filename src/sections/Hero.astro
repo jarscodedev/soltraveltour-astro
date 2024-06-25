@@ -6,13 +6,14 @@ import HeaderButton from "@/components/HeaderButton.astro"
 
     <div>
         <h2>Descubre la aventura y la emoción con nuestros viajes inolvidables.</h2>
-        <p>
+
+        <article>
             <span>
                 Sumérgete en destinos exóticos, saborea culturas fascinantes, 
                 y crea recuerdos inolvidables sin paquetes de viaje personalizados.
                 <strong >¡Que la aventura comience hoy mismo!</strong>
             </span>
-        </p>
+        </article>
 
         <span>
             <HeaderButton
@@ -39,6 +40,7 @@ import HeaderButton from "@/components/HeaderButton.astro"
         align-items: center;
         padding-top: 50px;
         margin: auto;
+        margin-top: 0;
         gap: 3rem;
         transition: all 0.3s ease;
     }
@@ -59,13 +61,21 @@ import HeaderButton from "@/components/HeaderButton.astro"
         margin: auto;
     }
 
-    section > div > span {
-        display: flex;
-        align-items: start;
-        justify-content: start;
+    section > div article {
+        padding-bottom: 30px;
         box-sizing: border-box;
-        font-size: 1.2em;
-        text-wrap: pretty;
+    }
+
+    section > div span {
+        /* text-wrap: pretty; */
+        display: flex;
+        flex-direction: column;
+        /* align-items: center; */
+        justify-content: start;
+        /* box-sizing: border-box; */
+        font-size: 1.1em;
+        font-weight: 300;
+        line-height: 1.5em;
     }
 
     a {
@@ -81,16 +91,9 @@ import HeaderButton from "@/components/HeaderButton.astro"
         background: #028dc5;
     }
 
-    section > p > span: {
-        font-size: 1.1em;
-        opacity: .7;
-        line-height: 1.7em;
-        font-weight: 300;
-    }
-
     strong {
         color: #fe7913;
-        font-size: 1.20em;
     }
 
 </style>
+
