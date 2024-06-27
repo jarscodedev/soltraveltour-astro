@@ -2,7 +2,7 @@
 import WsButton from "@/components/WsButton.astro";
 ---
 
-<section id="servicios">
+<section id="services">
   <h2>Servicios</h2>
 
   <div>
@@ -43,7 +43,7 @@ import WsButton from "@/components/WsButton.astro";
     </div>
   </div>
 
-  <div id="equipo">
+  <div id="team">
     <h2>Nuestro equipo</h2>
     <span class="span-text">
       Somos un equipo apasionado por los viajes, expertos en hacerte vivir
@@ -63,6 +63,7 @@ import WsButton from "@/components/WsButton.astro";
       </div>
 
       <WsButton
+        client:visible
         slot="before"
         href="https://api.whatsapp.com/send?phone=34600284568"
       >
@@ -73,22 +74,23 @@ import WsButton from "@/components/WsButton.astro";
   </div>
 
   <style>
-    #servicios {
+    #services {
       width: 85%;
       margin: auto;
       background-color: #e0f6ff;
       box-sizing: border-box;
       padding: 1.5rem 1.2rem;
+      padding-bottom: 100px;
     }
 
-    #servicios h2 {
+    #services h2 {
       display: flex;
       align-items: center;
       justify-content: center;
       font-size: 2em;
       font-weight: 900;
       transition: all 0.3s ease;
-      margin: auto;
+      margin: 0 auto;
     }
 
     #section > div {
@@ -142,19 +144,23 @@ import WsButton from "@/components/WsButton.astro";
       font-weight: lighter;
     }
 
-    #equipo > div {
-      width: 80%;
+    #equipo {
+      padding-top: 30px;
+    }
+
+    #team > div {
+      width: 60%;
       display: flex;
       border: 1px solid rgb(48, 183, 245);
       border-radius: 10px;
       margin: auto;
       background: #fff;
-      padding: 10px 20px;
-      gap: 2rem;
+      padding: 20px 25px;
+      gap: 1.5rem;
       flex-direction: column;
     }
 
-    #equipo > div > span {
+    #team > div > span {
       font-weight: lighter;
       font-size: 1.2em;
       display: flex;
@@ -168,8 +174,6 @@ import WsButton from "@/components/WsButton.astro";
       display: flex;
       align-items: center;
       gap: 1.5rem;
-      width: 80%;
-      margin: auto;
     }
 
     .leader-picture img {
@@ -178,7 +182,7 @@ import WsButton from "@/components/WsButton.astro";
 
     .leader-h2 {
       justify-content: start !important;
-      padding-bottom: 5px !important;
+      padding-bottom: 25px !important;
     }
   </style>
 </section>

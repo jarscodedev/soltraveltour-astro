@@ -16,6 +16,7 @@ import HeaderButton from "@/components/HeaderButton.astro";
 
     <div class="btn-container">
       <HeaderButton
+        client:visible
         slot="after"
         href="https://api.whatsapp.com/send?phone=34600284568"
       >
@@ -50,6 +51,7 @@ import HeaderButton from "@/components/HeaderButton.astro";
     color: #fe7913;
     font-weight: 900;
     transition: all 0.3s ease;
+    margin-top: 0;
   }
 
   section > div {
@@ -94,9 +96,5 @@ import HeaderButton from "@/components/HeaderButton.astro";
 
   figure img {
     width: 35vw;
-  }
-
-  @media (max-width: 767px;) {
-    
   }
 </style>
