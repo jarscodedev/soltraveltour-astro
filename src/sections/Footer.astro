@@ -3,6 +3,7 @@
 ---
 
 <footer class="footer">
+  <p>C/ de José Arcones Gil, 8 - Local 5</p>
   <section class="f-header">
     <div class="logo-text">
       <img
@@ -14,26 +15,61 @@
 
     <div class="footer-services">
       <h3>Servicios</h3>
-      <p>Vuelos baratos</p>
-      <p>Hoteles baratos</p>
-      <p>Asesoría de visados</p>
-      <p>Seguro de viajes</p>
+      <p>
+        <span class="material-symbols-outlined">arrow_right_alt</span>Vuelos
+        baratos
+      </p>
+      <p>
+        <span class="material-symbols-outlined">arrow_right_alt</span>Hoteles
+        baratos
+      </p>
+      <p>
+        <span class="material-symbols-outlined">arrow_right_alt</span>Asesoría
+        de visados
+      </p>
+      <p>
+        <span class="material-symbols-outlined">arrow_right_alt</span>Seguro de
+        viajes
+      </p>
     </div>
 
     <div class="footer-legalinfo">
       <h3>Información legal</h3>
-      <a href="#" target="_blank">aviso legal</a>
-      <a href="#" target="_blank">Política de privacidad</a>
-      <a href="#" target="_blank">Política de cookies</a>
-      <a href="#" target="_blank">Contacto</a>
+      <a href="#" target="_blank"
+        ><span class="material-symbols-outlined">arrow_right_alt</span>aviso
+        legal</a
+      >
+      <a href="#" target="_blank"
+        ><span class="material-symbols-outlined">arrow_right_alt</span>Política
+        de privacidad</a
+      >
+      <a href="#" target="_blank"
+        ><span class="material-symbols-outlined">arrow_right_alt</span>Política
+        de cookies</a
+      >
+      <a href="#" target="_blank"
+        ><span class="material-symbols-outlined">arrow_right_alt</span
+        >Contacto</a
+      >
     </div>
 
     <div class="footer-social">
       <h3>Redes Sociales</h3>
-      <a href="#" target="_blank">Instagram</a>
-      <a href="#" target="_blank">Facebook</a>
-      <a href="#" target="_blank">TikTok</a>
-      <a href="#" target="_blank">LinkedIn</a>
+      <a href="#" target="_blank"
+        ><span class="material-symbols-outlined">arrow_right_alt</span
+        >Instagram</a
+      >
+      <a href="#" target="_blank"
+        ><span class="material-symbols-outlined">arrow_right_alt</span
+        >Facebook</a
+      >
+      <a href="#" target="_blank"
+        ><span class="material-symbols-outlined">arrow_right_alt</span>TikTok</a
+      >
+      <a href="#" target="_blank"
+        ><span class="material-symbols-outlined">arrow_right_alt</span
+        >LinkedIn</a
+      >
     </div>
   </section>
   <div class="rights">
@@ -48,5 +84,50 @@
     background: #000;
     color: #fff;
     font-family: "Quicksand Variable", sans-serif !important;
+  }
+
+  .footer > p,
+  .rights > p {
+    text-align: center;
+    margin: 0;
+    padding: 30px 0;
+  }
+
+  .f-header {
+    gap: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .f-header,
+  .footer-legalinfo,
+  .footer-social {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .f-header h3,
+  .logo-text > p {
+    color: orange;
+  }
+
+  .footer-services p,
+  .footer-legalinfo a,
+  .footer-social a {
+    margin: 0;
+    display: flex;
+    gap: 0.5rem;
+    text-decoration: none;
+    color: #fff;
+  }
+
+  .logo-text {
+    width: 30%;
+  }
+
+  .footer-legalinfo,
+  .footer-social {
+    flex-direction: column;
   }
 </style>
